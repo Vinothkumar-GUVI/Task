@@ -1,0 +1,41 @@
+1.
+my_file.txt is created with some text
+another_file.txt is created with some text
+[cloudshell-user@ip-10-2-74-70 ~]$ mkdir my_folder
+[cloudshell-user@ip-10-2-74-70 ~]$ cd my_folder
+[cloudshell-user@ip-10-2-74-70 my_folder]$ touch my_file.txt
+[cloudshell-user@ip-10-2-74-70 my_folder]$ vi my_file.txt
+[cloudshell-user@ip-10-2-74-70 my_folder]$ touch another_file.txt
+[cloudshell-user@ip-10-2-74-70 my_folder]$ vi another_file.txt
+[cloudshell-user@ip-10-2-74-70 my_folder]$ cat my_file.txt
+my_file.txt is created with some text
+[cloudshell-user@ip-10-2-74-70 my_folder]$ cat another_file.txt
+another_file.txt is created with some text
+
+[cloudshell-user@ip-10-2-74-70 my_folder]$ cat another_file.txt >> my_file.txt
+[cloudshell-user@ip-10-2-74-70 my_folder]$ cat my_file.txt
+my_file.txt is created with some text
+another_file.txt is created with some text
+[cloudshell-user@ip-10-2-74-70 my_folder]$ ls -lah
+total 16K
+drwxr-xr-x 2 cloudshell-user cloudshell-user 4.0K Jul 21 07:51 .
+drwxr-xr-x 5 cloudshell-user cloudshell-user 4.0K Jul 21 08:06 ..
+-rw-r--r-- 1 cloudshell-user cloudshell-user   44 Jul 21 07:51 another_file.txt
+-rw-r--r-- 1 cloudshell-user cloudshell-user   82 Jul 21 07:57 my_file.txt
+
+
+2.
+[cloudshell-user@ip-10-2-74-70 ~]$ mkdir task2
+[cloudshell-user@ip-10-2-74-70 ~]$ cd task2
+[cloudshell-user@ip-10-2-74-70 task2]$ touch file{1..20}.txt
+[cloudshell-user@ip-10-2-74-70 task2]$ ls
+file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file1.txt   file2.txt  file4.txt  file6.txt  file8.txt
+file11.txt  file13.txt  file15.txt  file17.txt  file19.txt  file20.txt  file3.txt  file5.txt  file7.txt  file9.txt
+[cloudshell-user@ip-10-2-74-70 task2]$ ls -lht | head -6
+total 0
+-rw-r--r-- 1 cloudshell-user cloudshell-user 0 Jul 21 08:07 file10.txt
+-rw-r--r-- 1 cloudshell-user cloudshell-user 0 Jul 21 08:07 file11.txt
+-rw-r--r-- 1 cloudshell-user cloudshell-user 0 Jul 21 08:07 file12.txt
+-rw-r--r-- 1 cloudshell-user cloudshell-user 0 Jul 21 08:07 file13.txt
+-rw-r--r-- 1 cloudshell-user cloudshell-user 0 Jul 21 08:07 file14.txt
+[cloudshell-user@ip-10-2-74-70 task2]$ 
