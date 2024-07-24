@@ -1,0 +1,16 @@
+bash-5.2# cd /home
+bash-5.2# touch demo.txt
+bash-5.2# chmod 764 demo.txt
+bash-5.2# ls -lh
+total 4.0K
+drwxrwxrwx. 5 cloudshell-user cloudshell-user 4.0K Jul 24 13:23 cloudshell-user
+-rwxrw-r--. 1 root            root               0 Jul 24 13:48 demo.txt
+bash-5.2# ls -lh demo.txt
+-rwxrw-r--. 1 root root 0 Jul 24 13:48 demo.txt
+
+[cloudshell-user@ip-10-138-177-196 ~]$ whoami
+cloudshell-user
+[cloudshell-user@ip-10-138-177-196 ~]$ cd /home
+[cloudshell-user@ip-10-138-177-196 home]$ cat demo.txt
+Reading the File....
+[cloudshell-user@ip-10-138-177-196 home]$ 
