@@ -1,0 +1,84 @@
+vinoth@LAPTOP-KQNL3A0G:~$ nslookup guvi.in
+Server:         10.255.255.254
+Address:        10.255.255.254#53
+
+Non-authoritative answer:
+Name:   guvi.in
+Address: 104.26.5.88
+Name:   guvi.in
+Address: 104.26.4.88
+Name:   guvi.in
+Address: 172.67.70.207
+Name:   guvi.in
+Address: 2606:4700:9c6a:d255:c1c6:af6:60b8:c78e
+
+
+
+vinoth@LAPTOP-KQNL3A0G:~$ top
+top - 04:36:41 up  1:08,  1 user,  load average: 0.01, 0.02, 0.00
+Tasks:  27 total,   1 running,  26 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  3930144 total,  3399356 free,   394708 used,   136080 buff/cache
+KiB Swap:  1048576 total,  1048576 free,        0 used.  3350488 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+   2002 vinoth    20   0   42116   3664   3152 R   0.3  0.1   0:00.01 top
+      1 root      20   0  225300   9240   6900 S   0.0  0.2   0:00.47 systemd
+      2 root      20   0    2476   1432   1320 S   0.0  0.0   0:00.00 init-systemd(Ub
+      6 root      20   0    2476   1036   1000 S   0.0  0.0   0:00.00 init
+     58 root      19  -1   94724  13412  12828 S   0.0  0.3   0:00.10 systemd-journal
+     65 root      20   0   42912   4368   3060 S   0.0  0.1   0:00.12 systemd-udevd
+    234 systemd+  20   0   71732   5104   4592 S   0.0  0.1   0:00.02 systemd-network
+    243 root      20   0   70452   5924   5304 S   0.0  0.2   0:00.02 systemd-logind
+    244 root      20   0   31860   3220   2912 S   0.0  0.1   0:00.00 cron
+    250 syslog    20   0  263052   4208   3696 S   0.0  0.1   0:00.01 rsyslogd
+    252 root      20   0  171256  17528   9388 S   0.0  0.4   0:00.09 networkd-dispat
+    254 root      20   0  288004   6828   5964 S   0.0  0.2   0:00.02 accounts-daemon
+    259 daemon    20   0   28340   2452   2244 S   0.0  0.1   0:00.00 atd
+    263 message+  20   0   50068   4164   3700 S   0.0  0.1   0:00.07 dbus-daemon
+    275 systemd+  20   0   70500   4968   4504 S   0.0  0.1   0:00.03 systemd-resolve
+    277 root      20   0  288888   6600   5808 S   0.0  0.2   0:00.01 polkitd
+    299 root      20   0  187700  20240  12288 S   0.0  0.5   0:00.10 unattended-upgr
+    305 root      20   0   72308   5516   4792 S   0.0  0.1   0:00.00 sshd
+    318 root      20   0   16424   2312   2168 S   0.0  0.1   0:00.00 agetty
+    320 root      20   0   14900   1872   1744 S   0.0  0.0   0:00.00 agetty
+    338 root      20   0    2484    112      0 S   0.0  0.0   0:00.00 SessionLeader
+    340 root      20   0    2500    116      0 S   0.0  0.0   0:00.03 Relay(344)
+    344 vinoth    20   0   23004   5044   3472 S   0.0  0.1   0:00.05 bash
+    345 root      20   0   78640   3548   2996 S   0.0  0.1   0:00.00 login
+    470 vinoth    20   0   76652   7712   6640 S   0.0  0.2   0:00.02 systemd
+    471 vinoth    20   0  111596   2248     20 S   0.0  0.1   0:00.00 (sd-pam)
+    482 vinoth    20   0   22952   4964   3472 S   0.0  0.1   0:00.04 bash
+
+
+vinoth@LAPTOP-KQNL3A0G:~$ ping guvi.in
+PING guvi.in (104.26.4.88) 56(84) bytes of data.
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=1 ttl=51 time=9.24 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=2 ttl=51 time=7.32 ms
+64 bytes from 104.26.4.88 (104.26.4.88): icmp_seq=3 ttl=51 time=7.61 ms
+^C
+--- guvi.in ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2063ms
+rtt min/avg/max/mdev = 7.321/8.063/9.249/0.847 ms
+vinoth@LAPTOP-KQNL3A0G:~$ ping facebook.com
+PING facebook.com (163.70.139.35) 56(84) bytes of data.
+64 bytes from edge-star-mini-shv-02-tir3.facebook.com (163.70.139.35): icmp_seq=1 ttl=49 time=9.05 ms
+64 bytes from edge-star-mini-shv-02-tir3.facebook.com (163.70.139.35): icmp_seq=2 ttl=49 time=9.78 ms
+64 bytes from edge-star-mini-shv-02-tir3.facebook.com (163.70.139.35): icmp_seq=3 ttl=49 time=7.37 ms
+64 bytes from edge-star-mini-shv-02-tir3.facebook.com (163.70.139.35): icmp_seq=4 ttl=49 time=7.61 ms
+^C
+--- facebook.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 7.378/8.460/9.789/1.000 ms
+
+
+vinoth@LAPTOP-KQNL3A0G:~$ nc -vz guvi.com 9000
+nc: connect to guvi.com port 9000 (tcp) failed: Connection timed out
+nc: connect to guvi.com port 9000 (tcp) failed: Connection timed out
+nc: connect to guvi.com port 9000 (tcp) failed: Network is unreachable
+nc: connect to guvi.com port 9000 (tcp) failed: Network is unreachable
+
+
+
+
+
